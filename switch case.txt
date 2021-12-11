@@ -1,0 +1,38 @@
+
+#include <stdio.h>
+
+int
+main ()
+{
+  int num1, num2, result;
+  char ope;
+  scanf ("%d %d %c", &num1, &num2,&ope);
+  //scanf ("%c", &ope);
+  switch (ope)
+    {
+    case '+':
+      result = num1 + num2;
+      printf ("%d", result);
+      break;
+    case '-':
+      result = num1 - num2;
+      printf ("%d", result);
+      break;
+    case '*':
+      result = num1 * num2;
+      printf ("%d", result);
+      break;
+    case '/':
+      result = num1 / num2;
+      printf ("%d", result);
+      break;
+    default:
+      printf ("invalid operator");
+
+
+
+    }
+
+  return 0;
+}
+
