@@ -1,0 +1,30 @@
+
+
+#include <stdio.h>
+
+int main()
+{
+    int N,rev=0,temp,reminder;
+    scanf("%d",&N);
+    temp=N;
+    while(N!=0)
+    {
+        reminder=N%10;
+        rev=rev*10+reminder;
+        printf("%d",reminder);
+        N=N/10;
+        
+        
+    }
+
+   if(rev==temp){
+        printf("\nthe number is palldrom %d",rev);
+    }
+    else{
+        printf("\nthe number is not a palldrom");
+    }
+    
+
+    return 0;
+}
+
